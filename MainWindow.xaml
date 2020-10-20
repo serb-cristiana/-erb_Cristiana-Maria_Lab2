@@ -11,7 +11,7 @@
     <Grid>
         <Label x:Name="IblTitle" Content="Doughnuts - Bake &amp; Sale" FontSize="24" FontWeight="Bold" HorizontalContentAlignment="Center"/>
         <GroupBox x:Name="gbRaised" Header="Raised" FontWeight="Bold" Margin="82,61,486,233">
-            <Canvas Margin="0,0,68,26">
+            <Canvas Margin="0,0,-12,0" Height="130">
                 <GroupBox x:Name="gbFilled" Header="Filled" Height="144" Width="244" Canvas.Top="-14" Canvas.Left="355">
                     <Canvas>
                         <Label x:Name="lblGlazedRaised" Content="Glazed" Canvas.Left="-344" Canvas.Top="10" FontWeight="Normal"/>
@@ -54,7 +54,11 @@
                         <MenuItem x:Name="glazedMenuItem" Header="Glazed"/>
                         <MenuItem x:Name="sugarMenuItem" Header="Sugar"/>
                     </MenuItem>
-                    <MenuItem Header="Filled"/>
+                    <MenuItem Header="Filled">
+                        <MenuItem x:Name="lemonMenuItem" Header="Lemon"/>
+                        <MenuItem x:Name="chocolateMenuItem" Header="Chocolate"/>
+                        <MenuItem x:Name="vanillaMenuItem" Header="Vanilla"/>
+                    </MenuItem>
                 </MenuItem>
             </MenuItem>
         </Menu>
